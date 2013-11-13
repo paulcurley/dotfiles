@@ -1,0 +1,14 @@
+# ~/.tmuxinator/bgt.yml
+
+name: bgt
+root: ~/Development/berrygoodthings
+
+windows:
+  - vim: vim
+  - git: git status
+  - server: php artisan serve
+  - grunt: cd public && grunt watch
+  - db: mysql.server start
+        
+  
+
