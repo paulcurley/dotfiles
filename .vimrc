@@ -137,8 +137,9 @@ set guioptions-=L
 """""" colour scheme & fonts
 " set t_Co=256
 set background=dark
-" colorscheme solarized
-colorscheme twilight256
+let g:solarized_termcolors=256 
+colorscheme solarized
+"colorscheme twilight256
 if has('gui_running')
   "set guifont=Meslo\ LG\ S\ DZ:h14
   set guifont=Source\ Code\ Pro:h14
