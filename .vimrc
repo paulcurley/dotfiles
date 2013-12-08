@@ -246,7 +246,7 @@ map <c-c>h <c-w>h<c-w>c<c-w>l
 "tabs
 map <c-t>n :tabnew<cr>
 map <c-t>h :tabprevious<cr>
-map <c-t>j :tabnext<cr>
+map <c-t>l :tabnext<cr>
 map <c-t>c :tabclose<cr>
 
 " folds
