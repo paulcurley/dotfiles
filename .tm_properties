@@ -1,0 +1,46 @@
+# ---------------------------------------------------------
+# Variables
+# ---------------------------------------------------------
+TM_FULLNAME   = "Paul Curley"
+TM_ORGANIZATION = "paulcurley.com"
+TM_GIT        = "/usr/local/bin/git"
+MYFOLDERIGNOREPATTERNS = 'META-INF,.svn,Migrations,App_Browsers,App_Config,App_Data,bin,CacheManagement,Code,documents,NavigationHandler,obj,ProfileImageUploader,Properties,SearchAutoCompleteHandler,Service\ References,sitecore,sitecore\ modules,sitecore_files,SocialLoginHandler,temporaryimages,upload,WebServices,Mobile,jsmin,app/components,logs/*,  min'
+
+
+
+excludeInFileChooser = "{$excludeInFileChooser,$MYFOLDERIGNOREPATTERNS,node_modules, dist, temp, tmp, log,vendor}"
+excludeInBrowser = "{$excludeInBrowser,$MYFOLDERIGNOREPATTERNS}"
+excludeInFolderSearch = "{$excludeInFolderSearch,$MYFOLDERIGNOREPATTERNS,node_modules, dist, temp, tmp, log,vendor}"
+
+# ---------------------------------------------------------
+# General Settings
+# ---------------------------------------------------------
+showInvisibles = true
+spellChecking  = true
+
+[ text ]
+softWrap       = false
+#wrapColumn     = 100
+softTabs       = true
+tabSize        = 4
+
+[ text.html.markdown ]
+softWrap       = true
+wrapColumn     = "Use Window Frame"
+softTabs       = false
+tabSize        = 4
+
+[ text.plain ]
+softWrap       = true
+wrapColumn     = "Use Window Frame"
+softTabs       = false
+tabSize        = 4
+
+[ source ]
+softWrap       = true
+#wrapColumn     = 100
+softTabs       = true
+tabSize        = 2
+
+[ source.tm-properties ]
+spellChecking  = false
