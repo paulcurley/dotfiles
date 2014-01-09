@@ -28,9 +28,6 @@ brew install homebrew/dupes/grep
 brew tap josegonzalez/homebrew-php
 brew install php55
 
-# These two formulae didn’t work well last time I tried them:
-#brew install homebrew/dupes/vim
-#brew install homebrew/dupes/screen
 
 # Install other useful binaries
 brew install ack
@@ -63,8 +60,8 @@ function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
 
-#installcask dropbox
-#installcask google-chrome
+installcask dropbox
+installcask google-chrome
 #installcask google-chrome-canary
 #installcask imagealpha
 #installcask imageoptim
@@ -73,11 +70,11 @@ function installcask() {
 #installcask miro-video-converter
 #installcask sublime-text
 #installcask the-unarchiver
-#installcask tor-browser
-#installcask transmission
+installcask tor-browser
+installcask transmission
 #installcask ukelele
-#installcask virtualbox
-#installcask vlc
+installcask virtualbox
+installcask vlc
 installcask firefox
 installcask skype
 installcask textmate
