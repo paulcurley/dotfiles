@@ -1,4 +1,18 @@
 #!/usr/bin/env bash
+
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+chsh -s $(which zsh)
+
+
+npm install -g bower
+npm install -g david
+npm install -g grunt-cli
+npm install -g yo
+npm install -g zombie
+npm install -g plato
+
+
+
 cd "$(dirname "${BASH_SOURCE}")"
 git pull origin master
 function doIt() {
@@ -16,3 +30,5 @@ else
 	fi
 fi
 unset doIt
+
+

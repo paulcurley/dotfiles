@@ -32,6 +32,7 @@ brew install php55
 # Install other useful binaries
 brew install ack
 #brew install exiv2
+brew install fontforge
 brew install git
 brew install imagemagick
 brew install lynx
