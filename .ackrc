@@ -1,0 +1,19 @@
+--ignore-dir=tmp
+--ignore-dir=bower_components
+--ignore-dir=node_modules
+--ignore-dir=vendor
+--ignore-dir=coverage
+--ignore-dir=bdd/page_dumps
+
+--sort-files
+
+# Always color, even if piping to another program
+--color
+
+# Cucumber
+--type-set=cucumber=.feature
+
+#JSON
+--type-set=json=.json
+--type-add=js=.json
+--type-add=yaml=.json
