@@ -1,10 +1,10 @@
-""""""""""""""""" full vim
+" full vim
 set nocompatible " must be the first line
 
 set rtp+=$HOME/.vim/bundle/vundle
   call vundle#rc()
     Bundle 'gmarik/vundle'
-    filetype plugin indent on
+    filetype plugin indent off
 
     Bundle 'kien/ctrlp.vim'
     Bundle "MarcWeber/vim-addon-mw-utils"
@@ -12,21 +12,21 @@ set rtp+=$HOME/.vim/bundle/vundle
     Bundle 'garbas/vim-snipmate'
     Bundle 'vim-scripts/The-NERD-tree'
     Bundle 'jistr/vim-nerdtree-tabs'
-		Bundle "honza/vim-snippets"
-		Bundle 'bling/vim-airline'
-		Bundle 'vim-scripts/jsbeautify'
-		Bundle 'tpope/vim-surround'
-		Bundle "pangloss/vim-javascript"
-		Bundle 'elzr/vim-json.git'
-		Bundle 'jelera/vim-javascript-syntax'
-		Bundle 'Raimondi/delimitMate'
-		Bundle 'Valloric/YouCompleteMe'
-
-
-
+    Bundle "honza/vim-snippets"
+    Bundle 'bling/vim-airline'
+    Bundle 'vim-scripts/jsbeautify'
+    Bundle 'tpope/vim-surround'
+    Bundle "pangloss/vim-javascript"
+    Bundle 'elzr/vim-json.git'
+    Bundle 'jelera/vim-javascript-syntax'
+    Bundle 'Raimondi/delimitMate'
+    Bundle 'Shougo/vimproc'
+    Bundle 'yuratomo/gmail'
+    Bundle 'kchmck/vim-coffee-script'
 """""""""""""""""
 "general settings
 syntax on
+syntax enable
 let mapleader = ","
 
 set modeline
@@ -79,9 +79,9 @@ set autoindent
 set smartindent
 
 " tab settings
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set expandtab
 set smarttab
 
@@ -136,13 +136,15 @@ set guioptions-=L
 
 """""" colour scheme & fonts
 " set t_Co=256
+syntax enable
 set background=dark
-let g:solarized_termcolors=256 
+"let g:solarized_termcolors=256
 colorscheme solarized
 "colorscheme twilight256
 if has('gui_running')
   "set guifont=Meslo\ LG\ S\ DZ:h14
   set guifont=Source\ Code\ Pro:h14
+  set background=dark
 endif
 
 " folding
@@ -246,7 +248,7 @@ map <c-c>h <c-w>h<c-w>c<c-w>l
 "tabs
 map <c-t>n :tabnew<cr>
 map <c-t>h :tabprevious<cr>
-map <c-t>l :tabnext<cr>
+map <c-t>j :tabnext<cr>
 map <c-t>c :tabclose<cr>
 
 " folds
@@ -280,7 +282,7 @@ map ,j :call g:Jsbeautify()<cr>:retab<cr>
 :noremap <c-f> :CtrlP<cr>
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|cache$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\node_modules$|\vendor$|cache$',
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ 'link': '',
   \ }
