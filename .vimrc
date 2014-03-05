@@ -303,6 +303,22 @@ let g:syntastic_auto_loc_list=2 " close location list automatically
 " surround plugin
 autocmd FileType php let b:surround_45 = "<?php \r ?>"
 
+" textmate-ish
+nmap ,[ <<
+nmap ,] >>
+vmap ,[ <gv
+vmap ,] >gv
+imap ,[ <Esc><<
+imap ,] <Esc>>>
+
+nmap ,/ gcc
+vmap ,/ gc
+imap ,/ <Esc>gcci
+
+nmap ,T :tabnew<CR>
+nmap ,{ :tabprev<CR>
+nmap ,} :tabnext<CR>
+
 
 """""""""""""""
 " filetype specific
