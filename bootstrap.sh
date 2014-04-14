@@ -3,7 +3,9 @@
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 chsh -s $(which zsh)
 
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
+sh .brew
 npm install -g bower
 npm install -g david
 npm install -g grunt-cli
@@ -12,23 +14,31 @@ npm install -g zombie
 npm install -g plato
 
 
+########## Variables
+ 
+dir=~/dotfiles                    # dotfiles directory
+olddir=~/dotfiles_old             # old dotfiles backup directory
+files=".bashrc .vimrc .vim"        # list of files/folders to symlink in homedir
+ 
+##########
+ 
+echo "Creating $olddir for backup of any existing dotfiles in ~"
+mkdir -p $olddir
+ 
+echo "Changing to the $dir directory"
+mkdir -p $dir
+cd $dir
+ 
+for file in $files; do
+    echo "Moving any existing dotfiles from ~ to $olddir"
+    mv ~/$file ~/dotfiles_old/
+    echo "Creating symlink to $file in home directory."
+    ln -s $dir/$file ~/$file
+done
+ 
+source ~/.bashrc
+source ~/.vimrc
 
-cd "$(dirname "${BASH_SOURCE}")"
-git pull origin master
-function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" --exclude "LICENSE-MIT.txt" -av --no-perms . ~
-	source ~/.bash_profile
-}
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	doIt
-else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
-	echo
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		doIt
-	fi
-fi
-unset doIt
 
 
+sh .osx
