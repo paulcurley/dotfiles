@@ -21,7 +21,6 @@ set rtp+=$HOME/.vim/bundle/vundle
     Bundle 'jelera/vim-javascript-syntax'
     Bundle 'Raimondi/delimitMate'
     Bundle 'Shougo/vimproc'
-    Bundle 'yuratomo/gmail'
     Bundle 'kchmck/vim-coffee-script'
 """""""""""""""""
 "general settings
