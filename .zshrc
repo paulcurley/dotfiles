@@ -1,7 +1,9 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-. ~/.aliases
-. ~/.exports
+for file in ~/.{path,exports,aliases}; do
+	[ -r "$file" ] && source "$file"
+done
+unset file
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Set name of the theme to load.
