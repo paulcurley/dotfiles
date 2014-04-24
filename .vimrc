@@ -24,6 +24,8 @@ set rtp+=$HOME/.vim/bundle/vundle
     Bundle 'kchmck/vim-coffee-script'
     Bundle 'mileszs/ack.vim'
     Bundle 'firegoby/XSLT-Snippets'
+    Bundle 'airblade/vim-gitgutter' 
+    Bundle 'mhinz/vim-signify'
 """""""""""""""""
 "general settings
 syntax on
