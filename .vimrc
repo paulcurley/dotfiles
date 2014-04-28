@@ -295,6 +295,9 @@ let g:ctrlp_custom_ignore = {
 " don't be a dick ctrl-p
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/coverage/*,*/\.git/*
 
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 "localvimrc
 "let g:localvimrc_sandbox=0
