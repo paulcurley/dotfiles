@@ -166,6 +166,7 @@ au BufNewFile,BufRead *.jqt set filetype=html
 au BufNewFile,BufRead *.twig set filetype=html
 au BufNewFile,BufRead *.cshtml set filetype=html
 au BufNewFile,BufRead *.json set filetype=json
+au BufNewFile,BufRead *.spv set filetype=php
 " Markdown
 autocmd BufRead *.md  set ai formatoptions=tcroqn2 nonu comments=n:> ft=markdown
 autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:>
@@ -287,11 +288,12 @@ map ,j :call g:Jsbeautify()<cr>:retab<cr>
 :noremap <c-f> :CtrlP<cr>
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\node_modules$|\vendor$|cache$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\node_modules$|\coverage$|\vendor$|cache$',
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ 'link': '',
   \ }
-
+" don't be a dick ctrl-p
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/coverage/*,*/\.git/*
 
 
 "localvimrc
