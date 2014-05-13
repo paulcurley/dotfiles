@@ -1,6 +1,7 @@
 [alias]
         co = checkout
         ci = commit
+        whothefuckingfuck = blame
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
         lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
