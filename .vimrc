@@ -4,7 +4,7 @@ set nocompatible " must be the first line
 set rtp+=$HOME/.vim/bundle/vundle
   call vundle#rc()
     Bundle 'gmarik/vundle'
-    filetype plugin indent off
+    filetype plugin indent on
 
     Bundle 'kien/ctrlp.vim'
     Bundle "MarcWeber/vim-addon-mw-utils"
@@ -28,6 +28,7 @@ set rtp+=$HOME/.vim/bundle/vundle
     Bundle 'mhinz/vim-signify'
     Bundle 'veloce/vim-behat'
     Bundle 'tpope/vim-cucumber'
+    Bundle 'tpope/vim-haml'
 """""""""""""""""
 "general settings
 syntax on
@@ -84,9 +85,9 @@ set autoindent
 set smartindent
 
 " tab settings
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 set expandtab
 set smarttab
 
@@ -172,6 +173,8 @@ autocmd BufRead *.md  set ai formatoptions=tcroqn2 nonu comments=n:> ft=markdown
 autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:>
 " Dokuwiki
 autocmd BufRead *.dw  set ai formatoptions=tcroqn2 comments=n:> ft=dokuwiki
+
+autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldmarker={,}
 
 
 " settings for folding comments
