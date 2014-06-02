@@ -1,0 +1,32 @@
+# ~/.tmuxinator/kandl.yml
+
+name: kandl
+root: ~/workspace/kandlcurriculum
+
+
+
+pre: 
+  - VBoxManage startvm saaandobx --type headless
+  - sleep 30
+# - VirtualBox --startvm sandbox 
+
+windows:
+#  - irc: weechat-curses -r '/connect bbc'
+  - vim: 
+      layout: b107,236x54,0,0[236x45,0,0,0,236x8,0,46,7]
+      panes: 
+        - vim
+        - git s
+  - git: git status
+  - sandbox: sandbox
+  - grunt:
+      layout: even-horizontal
+      panes:
+        - grunt watch
+        - grunt compass
+  - logs:
+      layout: even-horizontal
+      panes:
+        - sandbox -C tail -f /var/log/httpd/error_log
+#  - cukesVim: cd ../kandlcucumber && vim
+#  - cukesSandbox: sandbox -C cd /mnt/hgfs/workspace/kandlcucumber 

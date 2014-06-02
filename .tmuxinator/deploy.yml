@@ -1,0 +1,29 @@
+# ~/.tmuxinator/deploy.yml
+
+name: deploy
+root: ~/workspace
+
+pre:
+
+windows:
+  - test:
+      layout: 9c9d,236x56,0,0[236x27,0,0{118x27,0,0,14,117x27,119,0,19},236x28,0,28{118x28,0,28,17,117x28,119,28,18}]
+      panes:
+        - curl https://logs.forge.bbc.co.uk/tail/tail/test/service-pal-test-app-logs/pal/bbc.co.uk/kandlcurriculum/error_log
+        - curl https://logs.forge.bbc.co.uk/tail/tail/test/service-app-test-app-logs/apache-tomcat-unifiedplace/catalina.out
+        - sandbox
+        - ls -la
+  - stage:
+      layout: 9c9d,236x56,0,0[236x27,0,0{118x27,0,0,14,117x27,119,0,19},236x28,0,28{118x28,0,28,17,117x28,119,28,18}]
+      panes:
+        - curl https://logs.forge.bbc.co.uk/tail/tail/stage/service-pal-stage-app-logs/pal/bbc.co.uk/kandlcurriculum/error_log
+        - curl https://logs.forge.bbc.co.uk/tail/tail/stage/service-app-stage-app-logs/apache-tomcat-unifiedplace/catalina.out
+        - sandbox
+        - ls -la
+  - live:
+      layout: 9c9d,236x56,0,0[236x27,0,0{118x27,0,0,14,117x27,119,0,19},236x28,0,28{118x28,0,28,17,117x28,119,28,18}]
+      panes:
+        - curl https://logs.forge.bbc.co.uk/tail/tail/live/service-pal-live-app-logs/pal/bbc.co.uk/kandlcurriculum/error_log
+        - curl https://logs.forge.bbc.co.uk/tail/tail/live/service-app-live-app-logs/apache-tomcat-unifiedplace/catalina.out
+        - sandbox
+        - ls -la
