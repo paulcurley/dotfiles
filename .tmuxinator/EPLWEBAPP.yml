@@ -1,7 +1,7 @@
-# ~/.tmuxinator/bgt.yml
+# ~/.tmuxinator/EPLWEBAPP.yml
 
-name: bgt
-root: ~/Development/berrygoodthings
+name: EPLWEBAPP
+root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -16,11 +16,10 @@ root: ~/Development/berrygoodthings
 # tmux_options: -f ~/.tmux.mac.conf
 
 windows:
-  - vim: vim
-  - git: git status
-  - server: php artisan serve
-  - grunt: cd public && grunt watch
-  - db: mysql.server start && mysql -uroot -proot
-        
-  
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+        - git status
+  - server: grunt server
 

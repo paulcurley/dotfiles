@@ -1,0 +1,36 @@
+# ~/.tmuxinator/is2.yml
+
+name: isite
+root: ~/workspace/isite2
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+pre:
+#  - VirtualBox --startvm sandbox
+#  - sleep 20
+ - vagrant up
+ #- vagrant ssh sandbox -C service httpd restart
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+windows:
+  - vim: vim
+  - git: git status
+  - grunt:
+      layout: even-horizontal
+      panes:
+        - grunt watch
+        - grunt
+  - sandbox: vagrant ssh
+  #- logs: vagrant ssh -i tail -f /var/log/httpd/error_log
+  - logs:
+      layout: even-horizontal
+      panes:
+        - vagrant ssh -c 'tail -f /var/log/httpd/error_log'
+        - vagrant ssh -c 'tail -f /data/app-logs/apache-tomcat-isite2-xforms/catalina.out'
