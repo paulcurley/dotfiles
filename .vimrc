@@ -226,12 +226,6 @@ nnoremap k gk
 " save readonly files with w!!
 cmap w!! w !sudo tee % >/dev/null
 
-" save & restore sessions
-map <c-s> :mksession! <cr>
-map <c-o> :source Session.vim <cr>
-
-" autocomplete shortcut to ctrol-space
-imap <c-space> <c-x><c-o>
 
 map <leader>w <C-W>w           " fast window switching
 map <leader>. :b#<cr>          " cycle between buffers
@@ -302,9 +296,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/coverage/*,*/\.git/*
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-"localvimrc
-"let g:localvimrc_sandbox=0
-let g:localvimrc_ask=0
 
 "Syntastic settings
 let g:syntastic_javascript_checker="jshint"
@@ -343,11 +334,6 @@ autocmd FileType json nmap <leader>f :%!python -m json.tool<cr>
 " format xml
 command! PrettyXML call DoPrettyXML()
 
-" jscomplete 
-autocmd FileType javascript
-  \ :setl omnifunc=jscomplete#CompleteJS
-let g:jscomplete_use = ['dom', 'moz']
-
 
 " mustache
 autocmd VimEnter,BufNewFile,BufRead *.mustache set nofoldenable
@@ -355,20 +341,6 @@ autocmd VimEnter,BufNewFile,BufRead *.mustache set nofoldenable
 "JavaScript Syntax
 let g:javascript_ignore_javaScriptdoc = 1
 
-
-" Python settings
-:autocmd FileType python set expandtab
-:autocmd FileType python set shiftwidth=4
-:autocmd FileType python set tabstop=4
-:autocmd FileType python set softtabstop=4
-
-"""""""""""
-" vim tools
-" create a uuid
-imap <c-j>d <c-r>=system('$HOME/.vim/utils/uuid.sh')<cr>
-
-"refresh browser"
-nnoremap <F5> :silent execute "!python $HOME/.vim/utils/browserrefresh.py &"<cr> :redraw!<cr>
 
 " run npm tests
 nnoremap <leader>t :!npm test<cr>
