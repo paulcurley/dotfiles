@@ -29,6 +29,7 @@ set rtp+=$HOME/.vim/bundle/vundle
     Bundle 'veloce/vim-behat'
     Bundle 'tpope/vim-cucumber'
     Bundle 'tpope/vim-haml'
+    Bundle 'christoomey/vim-tmux-navigator'
 """""""""""""""""
 "general settings
 syntax on
