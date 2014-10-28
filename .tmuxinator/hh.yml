@@ -3,7 +3,6 @@
 name: hh
 root: ~/Development/hh
 
-
 pre: mongod --fork
 
 windows:
@@ -11,14 +10,10 @@ windows:
         layout: f98d,230x59,0,0[230x40,0,0,0,230x18,0,41,4]
         panes:
           - vim
-          - irssi
+          - git s
   - shell:
         layout: e062,178x51,0,0{89x51,0,0,88x51,90,0[88x25,90,0,88x25,90,26]
         panes:
           - gulp test
-          - l
-  - remote:
-        layout: even-horizontal
-        panes:
-            - tail -f /usr/local/var/log/mongodb/mongo.log
-            - node keystone
+          - tail -f /usr/local/var/log/mongodb/mongo.log
+          - gulp dev
