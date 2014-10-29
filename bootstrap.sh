@@ -16,6 +16,8 @@ npm install -g yo
 npm install -g zombie
 npm install -g plato
 
+gem install vmail
+
 
 ########## Variables
  
