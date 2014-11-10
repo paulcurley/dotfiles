@@ -62,12 +62,6 @@ set showbreak=…
 set backspace=start,indent,eol " set backspace to act like normal
 set encoding=utf-8
 
-" line wrapping for automatic wrapping
-"set wrap
-"set tw=80
-"set fo=cqt
-"set wm=0
-
 " search settings
 set hlsearch               " highlight search things
 set incsearch              " go to search results as typing
@@ -77,7 +71,6 @@ set gdefault               " assume global when searching or substituting
 set magic                  " set magic on, for regular expressions
 set showmatch              " show matching brackets when text indicator is over them
 
-"set lazyredraw             " don't redraw screen during macros
 set ttyfast                " improves redrawing for newer computers
 set fileformats=unix,mac,dos
 
@@ -182,7 +175,7 @@ autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldma
 au BufNewFile,BufRead *.cpp,*.c,*.h,*.java,*.js syn region myCComment start="/\*\*" end="\*/" fold keepend transparent
 
 
-"au FileType javascript call JavaScriptFold()
+au FileType javascript call JavaScriptFold()
 
 
 """"""""""""""""""""
@@ -201,17 +194,9 @@ nmap <leader>r :%s#\<<C-r>=expand("<cword>")<CR>\>#
 " switch search highighting off temporaril
 nmap <silent> <leader>/ :nohlsearch<CR>
 
-" insert path of current file into a command
-cmap <c-p> <c-r>=expand("%:p:h") . "/" <cr>
-" insert full path of current file into a command
-cmap <c-f> <c-r>=expand("%:p")<cr>
-
 " save with ,,
 inoremap <leader>, <esc>:w<cr>
 nnoremap <leader>, :w<cr>
-
-" escape out of insert mode with jk
-inoremap jk <Esc>
 
 " swaps ' ` for easier bookmark return
 nnoremap ' `
@@ -279,9 +264,6 @@ let g:NERDTreeShowHidden=1
 
 map ,j :call g:Jsbeautify()<cr>:retab<cr>
 
-" taglist
-"nmap <F8> :TagbarToggle<CR>
-
 " ctrlp plugin (because c-p is used for other things)
 :noremap <c-f> :CtrlP<cr>
 let g:ctrlp_show_hidden = 1
@@ -335,19 +317,12 @@ autocmd FileType json nmap <leader>f :%!python -m json.tool<cr>
 " format xml
 command! PrettyXML call DoPrettyXML()
 
-
 " mustache
 autocmd VimEnter,BufNewFile,BufRead *.mustache set nofoldenable
 
 "JavaScript Syntax
 let g:javascript_ignore_javaScriptdoc = 1
 
-
-" run npm tests
-nnoremap <leader>t :!npm test<cr>
-
-" insert the current working directory
-iabbrev <silent> CWD <c-r>=getcwd()
 
 "save on focus lost
 :au FocusLost * :wa
