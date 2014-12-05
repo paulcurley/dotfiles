@@ -33,7 +33,6 @@ brew install php55
 brew install ack
 #brew install exiv2
 brew install fontforge
-brew install git
 brew install imagemagick
 brew install lynx
 brew install node

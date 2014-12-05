@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew doctor
 brew install git
+brew doctor
 
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-chsh -s $(which zsh)
+
+git clone https://github.com/paulcurley/dotfiles.git
+cd dotfiles;
+
 
 
 sh .brew
@@ -45,6 +46,9 @@ for file in $files; do
 
 done
  
+
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+chsh -s $(which zsh)
 
 
 sh .osx
