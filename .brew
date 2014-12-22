@@ -31,6 +31,7 @@ brew install php55
 
 # Install other useful binaries
 brew install ack
+brew install vim
 #brew install exiv2
 brew install fontforge
 brew install imagemagick
@@ -70,8 +71,8 @@ installcask google-chrome
 #installcask miro-video-converter
 #installcask sublime-text
 #installcask the-unarchiver
-#installcask tor-browser
-#installcask transmission
+installcask tor-browser
+installcask transmission
 #installcask ukelele
 installcask virtualbox
 installcask vlc
@@ -82,6 +83,12 @@ installcask spotify
 installcask firefox-aurora
 installcask charles
 installcask gimp
+installcask alfred
+installcask ccleaner
+installcask charles
+installcask lastfm
+installcask wunderlist
+installcask little-snitch
 
 # Remove outdated versions from the cellar
 brew cleanup
