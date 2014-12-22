@@ -18,6 +18,10 @@ npm install -g zombie
 npm install -g plato
 
 gem install vmail
+gem install capistrano
+gem install sass
+gem install rails
+gem install tmuxinator
 
 
 ########## Variables
