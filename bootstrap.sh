@@ -9,7 +9,7 @@ cd dotfiles;
 
 
 
-sh .brew
+sh ~/dotfiles/.brew
 npm install -g bower
 npm install -g david
 npm install -g grunt-cli
@@ -54,5 +54,6 @@ done
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 chsh -s $(which zsh)
 
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-sh .osx
+sh ~/dotfiles/.osx
