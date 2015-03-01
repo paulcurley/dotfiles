@@ -2,34 +2,34 @@
 set nocompatible " must be the first line
 
 set rtp+=$HOME/.vim/bundle/vundle
-  call vundle#rc()
-    Bundle 'gmarik/vundle'
+  call vundle#begin()
+    Plugin 'gmarik/vundle'
     filetype plugin indent on
 
-    Bundle 'kien/ctrlp.vim'
-    Bundle "MarcWeber/vim-addon-mw-utils"
-    Bundle "tomtom/tlib_vim"
-    Bundle 'garbas/vim-snipmate'
-    Bundle 'vim-scripts/The-NERD-tree'
-    Bundle 'jistr/vim-nerdtree-tabs'
-    Bundle "honza/vim-snippets"
-    Bundle 'bling/vim-airline'
-    Bundle 'vim-scripts/jsbeautify'
-    Bundle 'tpope/vim-surround'
-    Bundle "pangloss/vim-javascript"
-    Bundle 'elzr/vim-json.git'
-    Bundle 'jelera/vim-javascript-syntax'
-    Bundle 'Raimondi/delimitMate'
-    Bundle 'Shougo/vimproc'
-    Bundle 'kchmck/vim-coffee-script'
-    Bundle 'mileszs/ack.vim'
-    Bundle 'firegoby/XSLT-Snippets'
-    Bundle 'airblade/vim-gitgutter' 
-    Bundle 'mhinz/vim-signify'
-    Bundle 'veloce/vim-behat'
-    Bundle 'tpope/vim-cucumber'
-    Bundle 'tpope/vim-haml'
-    Bundle 'christoomey/vim-tmux-navigator'
+    Plugin 'kien/ctrlp.vim'
+    Plugin "MarcWeber/vim-addon-mw-utils"
+    Plugin "tomtom/tlib_vim"
+    Plugin 'garbas/vim-snipmate'
+    Plugin 'vim-scripts/The-NERD-tree'
+    Plugin 'jistr/vim-nerdtree-tabs'
+    Plugin "honza/vim-snippets"
+    Plugin 'bling/vim-airline'
+    Plugin 'vim-scripts/jsbeautify'
+    Plugin 'tpope/vim-surround'
+    Plugin "pangloss/vim-javascript"
+    Plugin 'elzr/vim-json.git'
+    Plugin 'jelera/vim-javascript-syntax'
+    Plugin 'Raimondi/delimitMate'
+    Plugin 'Shougo/vimproc'
+    Plugin 'kchmck/vim-coffee-script'
+    Plugin 'mileszs/ack.vim'
+    Plugin 'firegoby/XSLT-Snippets'
+    Plugin 'airblade/vim-gitgutter' 
+    Plugin 'mhinz/vim-signify'
+    Plugin 'veloce/vim-behat'
+    Plugin 'tpope/vim-cucumber'
+    Plugin 'tpope/vim-haml'
+    Plugin 'christoomey/vim-tmux-navigator'
 """""""""""""""""
 "general settings
 syntax on
