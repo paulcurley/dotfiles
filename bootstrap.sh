@@ -3,7 +3,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install git
 brew doctor
 
-
+cd workspace;
 git clone https://github.com/paulcurley/dotfiles.git
 cd dotfiles;
 
@@ -26,7 +26,7 @@ gem install tmuxinator
 
 ########## Variables
  
-dir=~/dotfiles                    # dotfiles directory
+dir=~/workspace/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 files=".bashrc .vimrc .gvimrc .gitconfig .aliases .ackrc .zshrc .exports .tmux.conf"        # list of files/folders to symlink in homedir
  
