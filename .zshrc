@@ -51,6 +51,8 @@ export DISABLE_AUTO_TITLE=true
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.bin/tmuxinator.zsh
+
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/local/bin:/Users/paulcurley/.rvm/gems/ruby-1.9.3-p374/bin:/Users/paulcurley/.rvm/gems/ruby-1.9.3-p374@global/bin:/Users/paulcurley/.rvm/rubies/ruby-1.9.3-p374/bin:/Users/paulcurley/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
