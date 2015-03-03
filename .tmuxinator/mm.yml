@@ -1,0 +1,20 @@
+# ~/.tmuxinator/hh.yml
+
+name: mm
+root: ~/workspace/marvellousmoggies
+
+#pre: mongod --fork
+
+
+windows:
+  - edit:
+        layout: f98d,230x59,0,0[230x40,0,0,0,230x18,0,41,4]
+        panes:
+          - vim
+          - git s
+  - shell:
+        layout: e062,178x51,0,0{89x51,0,0,88x51,90,0[88x25,90,0,88x25,90,26]
+        panes:
+          - npm test
+            #- tail -f /usr/local/var/log/mongodb/mongo.log
+          - npm dev
