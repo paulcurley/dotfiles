@@ -30,6 +30,7 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'tpope/vim-cucumber'
     Plugin 'tpope/vim-haml'
     Plugin 'christoomey/vim-tmux-navigator'
+    call vundle#end()
 """""""""""""""""
 "general settings
 syntax on
