@@ -3,10 +3,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install git
 brew doctor
 
-cd workspace;
+cd workspace
 git clone https://github.com/paulcurley/dotfiles.git
 cd dotfiles;
-
 
 
 sh ~/dotfiles/.brew
@@ -55,5 +54,6 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 chsh -s $(which zsh)
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 
 sh ~/dotfiles/.osx

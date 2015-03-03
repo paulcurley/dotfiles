@@ -1,22 +1,22 @@
 " full vim
 set nocompatible " must be the first line
 
-set rtp+=$HOME/.vim/bundle/vundle
+set rtp+=$HOME/.vim/bundle/Vundle.vim
   call vundle#begin()
     Plugin 'gmarik/vundle'
     filetype plugin indent on
 
     Plugin 'kien/ctrlp.vim'
-    Plugin "MarcWeber/vim-addon-mw-utils"
-    Plugin "tomtom/tlib_vim"
+    Plugin 'MarcWeber/vim-addon-mw-utils'
+    Plugin 'tomtom/tlib_vim'
     Plugin 'garbas/vim-snipmate'
     Plugin 'vim-scripts/The-NERD-tree'
     Plugin 'jistr/vim-nerdtree-tabs'
-    Plugin "honza/vim-snippets"
+    Plugin 'honza/vim-snippets'
     Plugin 'bling/vim-airline'
     Plugin 'vim-scripts/jsbeautify'
     Plugin 'tpope/vim-surround'
-    Plugin "pangloss/vim-javascript"
+    Plugin 'pangloss/vim-javascript'
     Plugin 'elzr/vim-json.git'
     Plugin 'jelera/vim-javascript-syntax'
     Plugin 'Raimondi/delimitMate'
