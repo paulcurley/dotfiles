@@ -16,11 +16,11 @@ npm install -g yo
 npm install -g zombie
 npm install -g plato
 
-gem install vmail
-gem install capistrano
-gem install sass
-gem install rails
-gem install tmuxinator
+sudo gem install vmail
+sudo gem install capistrano
+sudo gem install sass
+sudo gem install rails
+sudo gem install tmuxinator
 
 
 ########## Variables
