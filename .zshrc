@@ -51,7 +51,7 @@ export DISABLE_AUTO_TITLE=true
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.bin/tmuxinator.zsh
+#source ~/.bin/tmuxinator.zsh
 
 
 # Customize to your needs...
