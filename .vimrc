@@ -4,7 +4,6 @@ set nocompatible " must be the first line
 set rtp+=$HOME/.vim/bundle/Vundle.vim
   call vundle#begin()
     Plugin 'gmarik/vundle'
-    filetype plugin indent on
 
     Plugin 'kien/ctrlp.vim'
     Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -33,6 +32,7 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     call vundle#end()
 """""""""""""""""
 "general settings
+filetype plugin indent on
 syntax on
 syntax enable
 let mapleader = ","
