@@ -17,4 +17,4 @@ windows:
         panes:
           - npm test
             #- tail -f /usr/local/var/log/mongodb/mongo.log
-          - npm dev
+          - npm start
