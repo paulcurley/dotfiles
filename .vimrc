@@ -325,6 +325,21 @@ autocmd VimEnter,BufNewFile,BufRead *.mustache set nofoldenable
 "JavaScript Syntax
 let g:javascript_ignore_javaScriptdoc = 1
 
+"[un]escape html
+function! HtmlEscape()
+  silent s/&/\&amp;/eg
+  silent s/</\&lt;/eg
+  silent s/>/\&gt;/eg
+endfunction
+
+function! HtmlUnEscape()
+  silent s/&lt;/</eg
+  silent s/&gt;/>/eg
+  silent s/&amp;/\&/eg
+endfunction
+
+map <silent> <Leader>he :call HtmlEscape()<CR>
+map <silent> <Leader>hu :call HtmlUnEscape()<CR>
 
 "save on focus lost
 :au FocusLost * :wa
