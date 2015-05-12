@@ -1,7 +1,7 @@
 # ~/.tmuxinator/hh.yml
 
 name: hh
-root: ~/Development/hh
+root: ~/workspace/hh
 
 pre: mongod --fork
 
