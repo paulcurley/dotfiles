@@ -30,7 +30,8 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'tpope/vim-haml'
     Plugin 'christoomey/vim-tmux-navigator'
     Plugin 'jiangmiao/auto-pairs'
-    Plugin "justinj/vim-react-snippets"
+    Plugin 'justinj/vim-react-snippets'
+    Plugin 'mxw/vim-jsx'
     call vundle#end()
 """""""""""""""""
 "general settings
