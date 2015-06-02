@@ -14,6 +14,5 @@ windows:
   - shell:
         layout: e062,178x51,0,0{89x51,0,0,88x51,90,0[88x25,90,0,88x25,90,26]
         panes:
-          - npm test
-         #- tail -f /usr/local/var/log/mongodb/mongo.log
-          - npm start
+          - gulp compile
+          - node app/bin/www
