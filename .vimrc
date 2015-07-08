@@ -32,6 +32,7 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'jiangmiao/auto-pairs'
     Plugin 'justinj/vim-react-snippets'
     Plugin 'mxw/vim-jsx'
+    Plugin 'wavded/vim-stylus'
     call vundle#end()
 """""""""""""""""
 "general settings
