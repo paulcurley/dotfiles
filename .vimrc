@@ -33,6 +33,8 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'justinj/vim-react-snippets'
     Plugin 'mxw/vim-jsx'
     Plugin 'wavded/vim-stylus'
+    Plugin 'isRuslan/vim-es6'
+
     call vundle#end()
 """""""""""""""""
 "general settings
