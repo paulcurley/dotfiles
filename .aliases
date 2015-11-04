@@ -49,6 +49,9 @@ alias gurl='curl --compressed'
 # Get week number
 alias week='date +%V'
 
+#lock screen
+alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
