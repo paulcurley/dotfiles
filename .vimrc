@@ -5,6 +5,7 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
   call vundle#begin()
     Plugin 'gmarik/vundle'
 
+    Plugin 'altercation/vim-colors-solarized'
     Plugin 'kien/ctrlp.vim'
     Plugin 'MarcWeber/vim-addon-mw-utils'
     Plugin 'tomtom/tlib_vim'
