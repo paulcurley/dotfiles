@@ -27,6 +27,7 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'airblade/vim-gitgutter' 
     Plugin 'mhinz/vim-signify'
     Plugin 'veloce/vim-behat'
+    Plugin 'heavenshell/vim-jsdoc'
     Plugin 'tpope/vim-cucumber'
     Plugin 'tpope/vim-haml'
     Plugin 'christoomey/vim-tmux-navigator'
