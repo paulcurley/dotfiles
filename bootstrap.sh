@@ -7,6 +7,7 @@ cd ~/workspace
 git clone https://github.com/paulcurley/dotfiles.git
 cd dotfiles;
 
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
 
 sh ~/dotfiles/.brew
 npm install -g bower
