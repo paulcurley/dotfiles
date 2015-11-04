@@ -82,6 +82,7 @@ installcask textmate
 installcask spotify
 installcask firefox-aurora
 installcask charles
+installcask slack
 installcask gimp
 installcask alfred
 installcask ccleaner
