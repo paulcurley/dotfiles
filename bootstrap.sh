@@ -28,7 +28,7 @@ sudo gem install tmuxinator
  
 dir=~/workspace/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".bashrc .vimrc .gvimrc .gitconfig .aliases .ackrc .zshrc .exports .tmux.conf .tmuxinator"        # list of files/folders to symlink in homedir
+files=".bashrc .vimrc .gvimrc .gitconfig .aliases .ackrc .zshrc .exports .tmux.conf .tmuxinator .tm_properties"        # list of files/folders to symlink in homedir
  
 ##########
  
