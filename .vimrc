@@ -88,12 +88,10 @@ set autoindent
 set smartindent
 
 " tab settings
-set shiftwidth=4
-set tabstop=4
+set autoindent
 set noexpandtab
-set softtabstop=4
-set expandtab
-set smarttab
+set tabstop=4
+set shiftwidth=4
 
 " be quiet
 set visualbell             " don't beep
