@@ -3,6 +3,7 @@
 --ignore-dir=node_modules
 --ignore-dir=vendor
 --ignore-dir=coverage
+--ignore-dir=compiled
 --ignore-dir=bdd/page_dumps
 
 --sort-files
