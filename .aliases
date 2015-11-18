@@ -165,6 +165,8 @@ alias g:r="php artisan generate:resource"
 alias g:s="php artisan generate:scaffold"
 alias g:f="php artisan generate:form"
 
+#git 
+alias git-rm-merged-branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 #tmuxinator
 alias kts='tmux ls | awk '\''{print $1}'\'' | sed '\''s/://g'\'' | xargs -I{} tmux kill-session -t {}'
