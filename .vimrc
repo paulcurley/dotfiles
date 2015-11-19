@@ -289,7 +289,11 @@ let g:airline_powerline_fonts = 1
 
 
 "Syntastic settings
-let g:syntastic_javascript_checker="jshint"
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_auto_loc_list=2 " close location list automatically
 "let g:syntastic_mode_map = { 'mode': 'active',
                            "\ 'active_filetypes': ['ruby', 'php'],
