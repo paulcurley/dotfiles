@@ -36,6 +36,7 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'mxw/vim-jsx'
     Plugin 'wavded/vim-stylus'
     Plugin 'isRuslan/vim-es6'
+	Plugin 'scrooloose/syntastic'
 
     call vundle#end()
 """""""""""""""""
