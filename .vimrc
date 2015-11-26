@@ -285,15 +285,26 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/coverage/*,*/\.git/*
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1 
 let g:airline_powerline_fonts = 1
 
 
 "Syntastic settings
 "
+if $PATH !~ "\.nvm"
+	let $PATH="/Users/paulcurley/.nvm/v0.10.38/bin:" . $PATH
+endif
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_javascript_checkers = ['jshint']
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['jsxhint', 'jscs']
 let g:syntastic_auto_loc_list=2 " close location list automatically
 "let g:syntastic_mode_map = { 'mode': 'active',
                            "\ 'active_filetypes': ['ruby', 'php'],
