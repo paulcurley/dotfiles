@@ -19,7 +19,7 @@ windows:
         layout: 2d8c,270x65,0,0[270x48,0,0,0,270x16,0,49{135x16,0,49,2,134x16,136,49,4}]
         panes:
           - cd ../web-app-config && vim .
-          - git status
+          - cd ../web-app-config && git status
   - vtop:
         panes:
             - vtop --theme brew
