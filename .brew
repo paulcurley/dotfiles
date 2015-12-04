@@ -50,6 +50,7 @@ brew install colordiff
 brew install macvim
 brew tap homebrew/versions
 brew install lua52
+brew install jq
 
 # Install native apps
 brew install caskroom/cask/brew-cask
