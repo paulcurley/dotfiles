@@ -170,3 +170,6 @@ alias git-rm-merged-branches='git branch --merged | grep -v "\*" | xargs -n 1 gi
 
 #tmuxinator
 alias kts='tmux ls | awk '\''{print $1}'\'' | sed '\''s/://g'\'' | xargs -I{} tmux kill-session -t {}'
+
+#weather
+alias weather="curl -4 wttr.in/Glasgow"
