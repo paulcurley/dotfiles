@@ -174,3 +174,6 @@ alias git-purge='git fetch --all -p && git branch --merged | grep -v "\*" | grep
 
 #tmuxinator
 alias kts='tmux ls | awk '\''{print $1}'\'' | sed '\''s/://g'\'' | xargs -I{} tmux kill-session -t {}'
+
+#weather
+alias weather="curl -4 wttr.in/Glasgow"

@@ -115,7 +115,7 @@ if v:version >= 703
     set undofile
     set undolevels=1000
     set undoreload=10000
-    set colorcolumn=80    " show a right margin column
+    set colorcolumn=120    " show a right margin column
 endif
 
 
