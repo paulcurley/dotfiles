@@ -80,7 +80,10 @@
 
 
 [branch]
-  autosetuprebase = always
+  autosetuprebase = never
 [user]
-  name = Paul C
-  email = hello@paulcurley.co.uk
+  name = Paul Curley
+[credential]
+	helper = osxkeychain
+[gui]
+	recentrepo = /Users/paulcurley/workspace/web-app

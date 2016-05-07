@@ -276,8 +276,8 @@ map ,j :call g:Jsbeautify()<cr>:retab<cr>
 :noremap <c-f> :CtrlP<cr>
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\node_modules$|\coverage$|\vendor$|cache$',
-  \ 'file': '\.exe$\|\.so$\|\.dll$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\node_modules$|\compiled$|\coverage$|\vendor$|cache$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$|\.pdf$',
   \ 'link': '',
   \ }
 " don't be a dick ctrl-p

@@ -13,7 +13,7 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/Development"
 alias g="git"
 alias h="history"
-alias j="jobs"
+#alias j="jobs"
 alias v="vim"
 alias m="mate ."
 alias s="subl ."
@@ -148,13 +148,14 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # laravel new-app
 alias laravel="git clone -o laravel -b develop https://github.com/laravel/laravel.git"
-  
+
 alias artisan="php artisan"
 alias migrate="php artisan migrate"
 alias serve="php artisan serve"
 alias dump="php artisan dump"
-alias t="phpunit"
-   
+
+alias j="./node_modules/jest-cli/bin/jest.js"
+
 # Generators Package
 alias g:c="php artisan generate:controller"
 alias g:m="php artisan generate:model"
@@ -165,8 +166,11 @@ alias g:r="php artisan generate:resource"
 alias g:s="php artisan generate:scaffold"
 alias g:f="php artisan generate:form"
 
-#git 
-alias git-rm-merged-branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias t="phpunit"
+
+#git
+alias git-rm-merged-branches='git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d'
+alias git-purge='git fetch --all -p && git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d'
 
 #tmuxinator
 alias kts='tmux ls | awk '\''{print $1}'\'' | sed '\''s/://g'\'' | xargs -I{} tmux kill-session -t {}'

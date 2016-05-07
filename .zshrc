@@ -48,39 +48,7 @@ export DISABLE_AUTO_TITLE=true
 
 ulimit -n 1024
 
-### NVM
 
-##ZSH_THEME_NVM_PROMPT_PREFIX="%B⬡%b "
-##ZSH_THEME_NVM_PROMPT_SUFFIX=""
-##
-### get the node.js version
-##function my_nvm_prompt_info() {
-##  [ -f package.json ] || return
-##  [ -f "$HOME/.nvm/nvm.sh" ] || return
-##  local nvm_prompt
-##  nvm_prompt=$(node -v 2>/dev/null)
-##  [[ "${nvm_prompt}x" == "x" ]] && return
-##  nvm_prompt=${nvm_prompt:1}
-##
-##  local ver engine
-##  engine=$(cat package.json | jsawk 'return this.engines && this.engines["node"]')
-##
-##  local nvm_color='036'
-##
-##  if [ ! -z $engine ]; then
-##    ver=`semver ${nvm_prompt} -l -r ${engine}`
-##  else
-##    ver='yup'
-##    nvm_color='130'
-##  fi
-##
-##  if [[ -z "$ver" ]]; then
-##    nvm_color='red'
-##    nvm_prompt="${nvm_prompt} (${engine})"
-##  fi
-##
-##  echo " %F{${nvm_color}}${ZSH_THEME_NVM_PROMPT_PREFIX}%F{${nvm_color}}${nvm_prompt}%F{${nvm_color}}${ZSH_THEME_NVM_PROMPT_SUFFIX}%f"
-##}
 
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)

@@ -4,7 +4,9 @@
 TM_FULLNAME   = "Paul Curley"
 TM_ORGANIZATION = "paulcurley.com"
 TM_GIT        = "/usr/local/bin/git"
-MYFOLDERIGNOREPATTERNS = 'META-INF,.svn,Migrations,App_Browsers,App_Config,App_Data,bin,CacheManagement,Code,documents,NavigationHandler,obj,ProfileImageUploader,Properties,SearchAutoCompleteHandler,Service\ References,sitecore,sitecore\ modules,sitecore_files,SocialLoginHandler,temporaryimages,upload,WebServices,Mobile,jsmin,app/components,logs/*,  min'
+MYFOLDERIGNOREPATTERNS = 'META-INF,.svn,Migrations,App_Browsers,App_Config,App_Data,CacheManagement,Code,documents,NavigationHandler,obj,ProfileImageUploader,Properties,SearchAutoCompleteHandler,Service\ References,sitecore,sitecore\ modules,sitecore_files,SocialLoginHandler,temporaryimages,upload,WebServices,Mobile,jsmin,logs/*,  min,compiled'
+
+TM_JSLINTMATE_JSLINT_OPTIONS_FILE = "$TM_PROJECT_DIRECTORY/.jshintrc"
 
 includeFiles = "{*,.*}"
 includeDirectories = "{*,.*}"
