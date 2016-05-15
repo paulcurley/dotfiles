@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+export TERM="xterm-256color"
 for file in ~/.{path,exports,aliases}; do
 	[ -r "$file" ] && source "$file"
 done
