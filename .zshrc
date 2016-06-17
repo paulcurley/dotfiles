@@ -66,3 +66,4 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$HOME/.node/bin:$PATH
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+prompt_context () {  }
