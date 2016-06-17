@@ -82,7 +82,8 @@
 [branch]
   autosetuprebase = never
 [user]
-  name = Paul Curley
+	name = Paul Curley
+	email = hello@paulcurley.co.uk
 [credential]
 	helper = osxkeychain
 [gui]

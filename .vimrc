@@ -293,7 +293,7 @@ let g:airline_powerline_fonts = 1
 "Syntastic settings
 "
 if $PATH !~ "\.nvm"
-	let $PATH="/Users/paulcurley/.nvm/v0.10.38/bin:" . $PATH
+	let $PATH="/Users/paulcurley/.nvm/v4.3.2/bin:" . $PATH
 endif
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -304,11 +304,14 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ['jsxhint', 'jscs']
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_auto_loc_list=2 " close location list automatically
-"let g:syntastic_mode_map = { 'mode': 'active',
-                           "\ 'active_filetypes': ['ruby', 'php'],
-                           "\ 'passive_filetypes': ['html', 'jqt'] }
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['ruby', 'php', 'javascript'],
+                           \ 'passive_filetypes': ['html', 'jqt'] }
 
 " surround plugin
 autocmd FileType php let b:surround_45 = "<?php \r ?>"
