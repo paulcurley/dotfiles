@@ -4,7 +4,7 @@
 TM_FULLNAME   = "Paul Curley"
 TM_ORGANIZATION = "paulcurley.com"
 TM_GIT        = "/usr/local/bin/git"
-MYFOLDERIGNOREPATTERNS = 'META-INF,.svn,Migrations,App_Browsers,App_Config,App_Data,CacheManagement,Code,documents,NavigationHandler,obj,ProfileImageUploader,Properties,SearchAutoCompleteHandler,Service\ References,sitecore,sitecore\ modules,sitecore_files,SocialLoginHandler,temporaryimages,upload,WebServices,Mobile,jsmin,logs/*,  min,compiled'
+MYFOLDERIGNOREPATTERNS = 'META-INF,.svn,Migrations,App_Browsers,App_Config,coverage,App_Data,CacheManagement,Code,NavigationHandler,obj,ProfileImageUploader,Properties,SearchAutoCompleteHandler,Service\ References,sitecore,sitecore\ modules,sitecore_files,SocialLoginHandler,temporaryimages,upload,WebServices,Mobile,jsmin,logs/*,  min,compiled'
 
 TM_JSLINTMATE_JSLINT_OPTIONS_FILE = "$TM_PROJECT_DIRECTORY/.jshintrc"
 
@@ -20,12 +20,16 @@ excludeInFolderSearch = "{$excludeInFolderSearch,$MYFOLDERIGNOREPATTERNS,node_mo
 # ---------------------------------------------------------
 showInvisibles = true
 spellChecking  = true
+softTabs       = false
+tabSize = 4
 
 [ text ]
 softWrap       = false
 #wrapColumn     = 100
-softTabs       = true
+softTabs       = false
 tabSize        = 4
+
+
 
 [ text.html.markdown ]
 softWrap       = true
@@ -42,8 +46,8 @@ tabSize        = 4
 [ source ]
 softWrap       = true
 #wrapColumn     = 100
-softTabs       = true
-tabSize        = 2
+softTabs       = false
+tabSize        = 4
 
 [ source.tm-properties ]
 spellChecking  = false
