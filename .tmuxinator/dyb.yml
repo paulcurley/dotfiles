@@ -12,9 +12,12 @@ windows:
           - vim .
           - gulp
           - git status
-  - webapp-log:
+  - webapp-BT:
+        layout: 2d8c,270x65,0,0[270x48,0,0,0,270x16,0,49{135x16,0,49,2,134x16,136,49,4}]
         panes:
-          - l
+          - cd ../web-app-cc-balance-transfer && nvm use && vim .
+          - cd ../web-app-cc-balance-transfer && nvm use && npm start
+          - cd ../web-app-cc-balance-transfer && nvm use && git status
   - webapp-config:
         layout: 2d8c,270x65,0,0[270x48,0,0,0,270x16,0,49{135x16,0,49,2,134x16,136,49,4}]
         panes:
