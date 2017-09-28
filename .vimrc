@@ -37,6 +37,7 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'wavded/vim-stylus'
     Plugin 'isRuslan/vim-es6'
 	Plugin 'scrooloose/syntastic'
+	Plugin 'vim-fugitive'
 
     call vundle#end()
 """""""""""""""""
@@ -144,16 +145,14 @@ set guioptions-=L
 
 
 """""" colour scheme & fonts
-" set t_Co=256
 syntax enable
-"let g:solarized_termcolors=256
-set background=dark
 colorscheme solarized
+let g:solarized_termcolors=16
+set t_Co=256
+set guifont=Ubuntu\ Mono:h12
+set background=dark
 " colorscheme twilight256
 if has('gui_running')
-  "set guifont=Meslo\ LG\ S\ DZ:h14
-  set guifont=Source\ Code\ Pro:h14
-  set background=dark
 endif
 
 " folding
