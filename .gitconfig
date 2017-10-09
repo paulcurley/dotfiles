@@ -86,6 +86,5 @@
 	name = Paul Curley
 	email = hello@paulcurley.co.uk
 [credential]
-	helper = osxkeychain
 [gui]
 	recentrepo = /Users/paulcurley/workspace/web-app
