@@ -147,13 +147,12 @@ set guioptions-=L
 
 """""" colour scheme & fonts
 syntax enable
-colorscheme solarized
+"colorscheme solarized
 let g:solarized_termcolors=16
 set t_Co=256
 set guifont=Ubuntu\ Mono:h12
 set background=dark
-" colorscheme twilight256
-if has('gui_running')
+" colorscheme twilight256if has('gui_running')
 endif
 
 " folding
