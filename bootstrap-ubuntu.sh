@@ -54,3 +54,5 @@ chsh -s $(which zsh)
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
+nvm install --list
+node -g install vtop
