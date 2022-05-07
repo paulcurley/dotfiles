@@ -10,13 +10,16 @@ git remote set-url origin git@github.com:paulcurley/dotfiles.git
 cd dotfiles;
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 sudo gem install vmail
 sudo gem install capistrano
 sudo gem install rails
 sudo gem install tmuxinator
 
+suod apt install i3
+sudo api install go-lang-go
 
 ########## Variables
  
