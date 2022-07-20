@@ -183,6 +183,8 @@ autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldma
 au BufNewFile,BufRead *.cpp,*.c,*.h,*.java,*.js syn region myCComment start="/\*\*" end="\*/" fold keepend transparent
 
 
+" snipmate
+let g:snipMate = { 'snippet_version' : 1 }
 
 
 """"""""""""""""""""
