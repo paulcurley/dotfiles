@@ -20,7 +20,6 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'elzr/vim-json.git'
     Plugin 'jelera/vim-javascript-syntax'
     Plugin 'Raimondi/delimitMate'
-    Plugin 'Shougo/vimproc'
     Plugin 'kchmck/vim-coffee-script'
     Plugin 'mileszs/ack.vim'
     Plugin 'firegoby/XSLT-Snippets'
@@ -36,9 +35,13 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
     Plugin 'mxw/vim-jsx'
     Plugin 'wavded/vim-stylus'
     Plugin 'isRuslan/vim-es6'
-	Plugin 'scrooloose/syntastic'
-	Plugin 'vim-fugitive'
-	Plugin 'editorconfig/editorconfig-vim'
+    Plugin 'scrooloose/syntastic'
+    Plugin 'vim-fugitive'
+    Plugin 'editorconfig/editorconfig-vim'
+    Plugin 'leafgarland/typescript-vim'
+    Plugin 'Shougo/vimproc.vim'
+    Plugin 'MaxMEllon/vim-jsx-pretty'
+    Plugin 'Quramy/tsuquyomi'
 
     call vundle#end()
 """""""""""""""""
@@ -153,7 +156,7 @@ set t_Co=256
 set guifont=Ubuntu\ Mono:h12
 set background=dark
 " colorscheme twilight256if has('gui_running')
-endif
+"endif
 
 " folding
 set foldenable                   " enable folding
